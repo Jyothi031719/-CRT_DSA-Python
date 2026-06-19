@@ -1,0 +1,63 @@
+#product of all numbers:
+def factorial(n):
+  if n==1:
+    return 1
+  return n*factorial(n-1)
+
+print(factorial(4))
+
+
+nums=(1,2,0,4,3)
+def s (nums):
+  if Len(nums)<=1: return nums
+  L=Len(nums)
+  Left=nums[:L/2]
+  Right=nums[L/2:]
+  print(s(Left),s(Right))
+  return nums
+  s(nums)
+
+
+merge_list:
+
+def merge_list(L1,L2)
+    i,j=0,0
+    res=[]
+  while i<len(L1) or j<len(L2):
+    if L1[i]<L2[j]:
+      res.append(L1[i])
+      i+=1
+    elif L1[i]>L2[j]:
+      res.append(L2(j))
+      j+=1
+  res.extend(L1[i:])
+  res.extend(L2(j))
+result res
+
+ medium level:
+
+    class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        if len(nums)<=1:
+            return nums
+        mid=len(nums)//2
+        left=self.sortArray(nums[:mid])
+        right=self.sortArray(nums[mid:])
+        return self.merge_list(left,right)
+    def merge_list(self,left, right):
+        result = []
+        i = 0
+        j = 0
+        while i < len(left) and j < len(right):
+            if left[i] <= right[j]:
+                result.append(left[i])
+                i += 1
+            else:
+                result.append(right[j])
+                j += 1
+        result.extend(left[i:])
+        result.extend(right[j:])
+        return result
+
+
+        

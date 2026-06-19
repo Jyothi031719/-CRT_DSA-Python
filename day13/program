@@ -1,0 +1,70 @@
+1:
+def insertAtEnd(self,val):
+    new.Node = Node(val)
+   if self.head is None:
+       self.head=new Node
+          return
+       current = self.head
+   while current. head
+       current = current
+       current.next = new Node
+          return head
+
+2:
+def insertAtEnd(self,val):
+    if self.head is None
+       return -1
+    if self.head is None
+        self.head= None
+        return
+    temp= self.head
+    self.head = self head.next
+    temp.next = None
+    deletefrom .size-1
+    return  self.head
+
+3:
+def deletFromEnd(self):
+    if self.head is None
+      return -1
+    if selfhead.next is None:
+        self.head = None
+        return 
+    curr = self.head
+    while curr.next.next:
+        curr = curr.next
+    curr.next = None
+    d = curr.next
+    curr.next = None
+    deletefrom.size-1
+      return d
+
+
+4:
+def display(self):
+    curr = self.head
+    while cuur:  # current updated to next move
+        print(currdata)
+        curr = curr.next
+5:
+def deleteIndex(self,Index):
+    if self.head
+       return -1
+    if index ==0:
+        deleyeAtstart():
+        return
+    if index==self.size-1:
+        deleteFromEnd()
+        return
+    curr=self.head 
+    for i in rage(index-1):
+        curr=curr.next
+    temp=curr.next
+    curr.next = temp.next
+    temp.next=None
+    return temp
+
+
+
+
+          
